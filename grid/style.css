@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    width: 50%;
+    background-color: darkblue;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+input::placeholder {
+    color: #ffffffb2;
+}
+
+input:focus {
+    border: 2px solid chartreuse;
+}
+
+form {
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+.fake_checkbox {
+    background-color: orange;
+    width: 40px;
+    height: 40px;
+}
+
+label input:checked+.fake_checkbox {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+
+select {
+    background-color: blue;
+    color: #fff;
+    font-size: 25px;
+    width: 400px;
+    padding: 40px;
+}
